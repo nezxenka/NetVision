@@ -1,0 +1,38 @@
+# <check_name> - название чека
+# <vl> - нарушения
+# <verbose> - дополнительная информация
+# <player> - ник игрока
+# [alert] - алерт
+# [broadcast] отправка сообщения всем игрокам на сервере
+# [reset] - ресет нарушений для игрока
+
+Punishments:
+  AI:
+    checks:
+      - "AI (Aim)"
+    actions:
+      1:
+        - "[alert]"
+        - "[log]"
+        - "shame ban <player>"
+      3:
+        - "[alert]"
+        - "[log]"
+        - "shame ban <player>"
+      5:
+        - "[alert]"
+        - "[log]"
+        - "shame ban <player>"
+      7:
+        - "[alert]"
+        - "[log]"
+        - "shame ban <player>"
+      9:
+        - "[alert]"
+        - "[log]"
+        - "shame ban <player>"
+      15:
+        - "[alert]"
+        - "[log]"
+        - "shame ban <player>"
+        - "[reset]"

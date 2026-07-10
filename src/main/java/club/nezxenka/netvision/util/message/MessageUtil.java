@@ -1,6 +1,6 @@
 package club.nezxenka.netvision.util.message;
 
-import club.nezxenka.netvision.config.locale.LocaleManager;
+import club.nezxenka.netvision.core.locale.LocaleManager;
 import java.util.List;
 import java.util.stream.Collectors;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;

@@ -1,6 +1,6 @@
 package club.nezxenka.netvision.listener.menu.close;
 
-import club.nezxenka.netvision.menu.history.HistoryMenu;
+import club.nezxenka.netvision.visual.menu.history.HistoryMenu;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 
 public class SessionCleanupHandler {

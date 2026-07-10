@@ -1,7 +1,7 @@
 package club.nezxenka.netvision.entity.compensation.registry;
 
+import club.nezxenka.netvision.actor.model.NetVisionPlayer;
 import club.nezxenka.netvision.entity.api.PacketEntity;
-import club.nezxenka.netvision.player.model.NetVisionPlayer;
 import com.github.retrooper.packetevents.protocol.entity.type.EntityType;
 import java.util.HashMap;
 import java.util.Map;

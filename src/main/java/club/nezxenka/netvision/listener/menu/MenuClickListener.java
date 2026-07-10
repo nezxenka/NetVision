@@ -1,8 +1,8 @@
 package club.nezxenka.netvision.listener.menu;
 
 import club.nezxenka.netvision.NetVision;
-import club.nezxenka.netvision.menu.chickencoop.ChickenCoopMenu;
-import club.nezxenka.netvision.menu.history.HistoryMenu;
+import club.nezxenka.netvision.visual.menu.coop.ChickenCoopMenu;
+import club.nezxenka.netvision.visual.menu.history.HistoryMenu;
 import java.util.UUID;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;

@@ -1,7 +1,7 @@
 package club.nezxenka.netvision.event.listener.preprocess;
 
-import club.nezxenka.netvision.player.manager.PlayerDataManager;
-import club.nezxenka.netvision.player.model.NetVisionPlayer;
+import club.nezxenka.netvision.actor.manager.PlayerDataManager;
+import club.nezxenka.netvision.actor.model.NetVisionPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 

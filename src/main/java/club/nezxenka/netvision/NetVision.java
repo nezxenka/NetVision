@@ -1,24 +1,24 @@
 package club.nezxenka.netvision;
 
-import club.nezxenka.netvision.alert.internal.AlertManager;
-import club.nezxenka.netvision.command.framework.CommandFramework;
-import club.nezxenka.netvision.config.core.ConfigManager;
-import club.nezxenka.netvision.config.locale.LocaleManager;
-import club.nezxenka.netvision.database.connection.DatabaseManager;
-import club.nezxenka.netvision.debug.internal.DebugManager;
+import club.nezxenka.netvision.actor.manager.PlayerDataManager;
+import club.nezxenka.netvision.core.config.ConfigManager;
+import club.nezxenka.netvision.core.diagnostic.internal.DebugManager;
+import club.nezxenka.netvision.core.locale.LocaleManager;
+import club.nezxenka.netvision.core.storage.connection.DatabaseManager;
 import club.nezxenka.netvision.event.listener.DamageEventListener;
-import club.nezxenka.netvision.hologram.internal.HologramManager;
 import club.nezxenka.netvision.integration.worldguard.WorldGuardManager;
 import club.nezxenka.netvision.listener.menu.MenuClickListener;
-import club.nezxenka.netvision.menu.chickencoop.ChickenCoopMenu;
-import club.nezxenka.netvision.menu.history.HistoryMenu;
-import club.nezxenka.netvision.packet.listener.PacketListener;
-import club.nezxenka.netvision.player.manager.PlayerDataManager;
-import club.nezxenka.netvision.redis.alert.CrossServerAlertService;
-import club.nezxenka.netvision.redis.connection.RedisManager;
-import club.nezxenka.netvision.redis.suspicious.CrossServerSuspiciousService;
-import club.nezxenka.netvision.server.provider.AIServerProvider;
+import club.nezxenka.netvision.protocol.listener.PacketListener;
+import club.nezxenka.netvision.remote.provider.AIServerProvider;
+import club.nezxenka.netvision.service.bridge.alert.CrossServerAlertService;
+import club.nezxenka.netvision.service.bridge.connection.RedisManager;
+import club.nezxenka.netvision.service.bridge.suspicious.CrossServerSuspiciousService;
+import club.nezxenka.netvision.service.command.framework.CommandFramework;
+import club.nezxenka.netvision.service.hologram.internal.HologramManager;
+import club.nezxenka.netvision.service.signal.internal.SignalManager;
 import club.nezxenka.netvision.util.message.MessageUtil;
+import club.nezxenka.netvision.visual.menu.coop.ChickenCoopMenu;
+import club.nezxenka.netvision.visual.menu.history.HistoryMenu;
 import com.github.retrooper.packetevents.PacketEvents;
 import io.github.retrooper.packetevents.factory.spigot.SpigotPacketEventsBuilder;
 import lombok.Getter;
@@ -30,7 +30,7 @@ public final class NetVision extends JavaPlugin {
   private LocaleManager localeManager;
   private AIServerProvider aiServerProvider;
   private WorldGuardManager worldGuardManager;
-  private AlertManager alertManager;
+  private SignalManager alertManager;
 
   @Getter PlayerDataManager playerDataManager;
 
@@ -68,7 +68,7 @@ public final class NetVision extends JavaPlugin {
     MessageUtil.init(this.localeManager, this.adventure);
     this.databaseManager = new DatabaseManager(this, configManager);
     this.worldGuardManager = new WorldGuardManager(this, configManager);
-    this.alertManager = new AlertManager(this, configManager, localeManager, adventure);
+    this.alertManager = new SignalManager(this, configManager, localeManager, adventure);
     this.aiServerProvider = new AIServerProvider(this, configManager);
     this.chickenCoopMenu = new ChickenCoopMenu(this);
     this.historyMenu = new HistoryMenu(this);

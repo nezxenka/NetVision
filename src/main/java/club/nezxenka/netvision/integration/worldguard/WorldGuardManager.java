@@ -1,7 +1,7 @@
 package club.nezxenka.netvision.integration.worldguard;
 
 import club.nezxenka.netvision.NetVision;
-import club.nezxenka.netvision.config.core.ConfigManager;
+import club.nezxenka.netvision.core.config.ConfigManager;
 import com.sk89q.worldedit.bukkit.BukkitAdapter;
 import com.sk89q.worldedit.math.BlockVector3;
 import com.sk89q.worldguard.WorldGuard;

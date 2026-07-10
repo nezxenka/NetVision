@@ -1,7 +1,7 @@
 package club.nezxenka.netvision.util.latency;
 
 import club.nezxenka.netvision.NetVision;
-import club.nezxenka.netvision.player.model.NetVisionPlayer;
+import club.nezxenka.netvision.actor.model.NetVisionPlayer;
 import club.nezxenka.netvision.util.message.Message;
 import club.nezxenka.netvision.util.message.MessageUtil;
 import com.github.retrooper.packetevents.netty.channel.ChannelHelper;

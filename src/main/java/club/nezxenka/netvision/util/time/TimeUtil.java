@@ -1,6 +1,6 @@
 package club.nezxenka.netvision.util.time;
 
-import club.nezxenka.netvision.config.locale.LocaleManager;
+import club.nezxenka.netvision.core.locale.LocaleManager;
 import club.nezxenka.netvision.util.message.Message;
 import java.time.Instant;
 import java.util.concurrent.TimeUnit;

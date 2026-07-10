@@ -1,5 +1,6 @@
 package club.nezxenka.netvision.entity.compensation;
 
+import club.nezxenka.netvision.actor.model.NetVisionPlayer;
 import club.nezxenka.netvision.entity.api.PacketEntity;
 import club.nezxenka.netvision.entity.type.animal.PacketEntityHorse;
 import club.nezxenka.netvision.entity.type.object.PacketEntityArmorStand;
@@ -7,7 +8,6 @@ import club.nezxenka.netvision.entity.type.object.PacketEntityTrackXRot;
 import club.nezxenka.netvision.entity.type.player.PacketEntityPlayer;
 import club.nezxenka.netvision.entity.type.player.PacketEntitySelf;
 import club.nezxenka.netvision.entity.type.projectile.PacketEntityUnHittable;
-import club.nezxenka.netvision.player.model.NetVisionPlayer;
 import com.github.retrooper.packetevents.protocol.entity.type.EntityType;
 import com.github.retrooper.packetevents.protocol.entity.type.EntityTypes;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;

@@ -1,6 +1,6 @@
 package club.nezxenka.netvision.entity.api;
 
-import club.nezxenka.netvision.player.model.NetVisionPlayer;
+import club.nezxenka.netvision.actor.model.NetVisionPlayer;
 import com.github.retrooper.packetevents.protocol.entity.type.EntityType;
 import com.github.retrooper.packetevents.protocol.entity.type.EntityTypes;
 import java.util.ArrayList;
